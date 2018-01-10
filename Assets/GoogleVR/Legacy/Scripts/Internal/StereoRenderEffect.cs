@@ -12,26 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// This class is defined only the editor does not natively support GVR, or if the current
-/// VR player is the in-editor emulator.
-
 using UnityEngine;
 
 /// @cond
 [RequireComponent(typeof(Camera))]
 [AddComponentMenu("GoogleVR/StereoRenderEffect")]
 public class StereoRenderEffect : MonoBehaviour {
-#if !UNITY_HAS_GOOGLEVR || UNITY_EDITOR
   private Material material;
 
   private Camera cam;
 
-#if UNITY_5_6_OR_NEWER
-  private Rect fullRect;
-  public GvrViewer.Eye eye;
-#else
   private static readonly Rect fullRect = new Rect(0, 0, 1, 1);
-#endif  // UNITY_5_6_OR_NEWER
 
   void Awake() {
     cam = GetComponent<Camera>();
@@ -39,10 +30,6 @@ public class StereoRenderEffect : MonoBehaviour {
 
   void Start() {
     material = new Material(Shader.Find("GoogleVR/UnlitTexture"));
-#if UNITY_5_6_OR_NEWER
-    fullRect = (eye == GvrViewer.Eye.Left ? new Rect (0, 0, 0.5f, 1) : new Rect (0.5f, 0, 0.5f, 1));
-#endif
-
   }
 
   void OnRenderImage(RenderTexture source, RenderTexture dest) {
@@ -60,6 +47,6 @@ public class StereoRenderEffect : MonoBehaviour {
     RenderTexture.active = oldActive;
     GL.PopMatrix();
   }
-#endif  // !UNITY_HAS_GOOGLEVR || UNITY_EDITOR
 }
 /// @endcond
+

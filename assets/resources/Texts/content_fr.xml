@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+
+<GUI_hotspot1>ça m’évitera de bouger et je pourrai voir Brigitte. </GUI_hotspot1>
+<GUI_hotspot2>Il est déjà 14h. Je n’aurai jamais le temps de tout préparer pour 17h. Tant pis, je la verrai en Irlande dans 2 semaines.</GUI_hotspot2>
+
+<GUI_hotspot3>Devis pour un volet automatique :  Volets roulants PVC : 200 € Pose de l’équipement : 250 € Total : 450 €  Il est temps de changer !</GUI_hotspot3>
+<GUI_hotspot4>Compte en banque :  Solde : 900 euros A venir : -100 euros Total : 800 euros  Ce n’est pas raisonnable !</GUI_hotspot4>
+
+<GUI_hotspot5>Tiens si je mettais ma musique préférée...</GUI_hotspot5>
+<GUI_hotspot6>Un bon vieux tube de mon enfance !</GUI_hotspot6>
+
+<GUI_hotspot7>Je préfère faire les travaux pour préserver mon dos.</GUI_hotspot7>
+<GUI_hotspot8>Il est déjà 15h, je verrais ça après quand la douleur sera passé.</GUI_hotspot8>
+
+<GUI_hotspot9>Pourquoi pas, je n’ai pas souvent l’occasion de les voir.</GUI_hotspot9>
+<GUI_hotspot10>Je ne préfère pas, c’est du travail. Ils sont vraiment petits...</GUI_hotspot10>
+
+<GUI_hotspot11>C’est trop dangereux, j’enlève ce tapis.</GUI_hotspot11>
+<GUI_hotspot12>Je préfère le scotcher ça limitera les risques.</GUI_hotspot12>
+
+<GUI_hotspot13>Je vais demander au gardien de m’aider à rehausser le four.</GUI_hotspot13>
+<GUI_hotspot14>ça ne vaut pas le coup. Demain ça ira mieux, j’ai juste mal dormi.</GUI_hotspot14>
+
+<GUI_hotspot15>ça fait longtemps que je ne suis pas parti ! Et en plus, Brigitte y va aussi.</GUI_hotspot15>
+<GUI_hotspot16>Je ne préfère pas, c’est tout de même un coup tout ça. En plus, il faut prendre l’avion et faire garder la maison.</GUI_hotspot16>
+
+<GUI_hotspot17>Je vais encore appeler le gardien. Il va en avoir mare que je le dérange tout le temps.</GUI_hotspot17>
+<GUI_hotspot18>Je ne peux le faire moi-même, ça ne devrait pas prendre longtemps.</GUI_hotspot18>
+
+<GUI_loading>loading...</GUI_loading>
+
+<GUI_next>next</GUI_next>
+<GUI_previous>previous</GUI_previous>
+
+<GUI_category>Category</GUI_category>
+
+<tutorial_close>Close tutorial</tutorial_close>
+<tutorial_skip>Skip tutorial</tutorial_skip>
+
+
+<cancel>Cancel</cancel>
+<GUI_welcome>Welcome</GUI_welcome>
+
+
+
+<GUI_tutorial_filters>Use these buttons to 
+explore the available 
+profiles. Search by
+category, name, or 
+special criteria. </GUI_tutorial_filters>
+<GUI_tutorial_zones>Select one of the 
+available albums 
+to view a list of 
+videos and photos.</GUI_tutorial_zones>
+<GUI_tutorial_details>Here is the important 
+information of the 
+selected profile. </GUI_tutorial_details>
+<GUI_tutorial_save>Use this button to add 
+or remove this profile 
+from your SAVED list.</GUI_tutorial_save>
+
+<GUI_tutorial_special_scroll>TIP: swipe up or down on your device
+trackpad to scroll a list.</GUI_tutorial_special_scroll>
+<GUI_tutorial_special_double_tap>TIP: double tap on your device trackpad 
+to select elements inside a list.</GUI_tutorial_special_double_tap>
+
+
+<GUI_no_content>There is no content available.</GUI_no_content>
+
+
+
+<view>Check it!</view>
+<view_photo>View Photo</view_photo>
+<view_video>Watch Video</view_video>
+<view_virtual>Take Tour</view_virtual>
+<home>Home</home>
+
+<details_more>more</details_more>
+<details_less>less</details_less>
+
+<close>Close</close>
+<empty></empty>
+
+
+<ERROR_server>Sorry, an error has occured 
+while trying to access the server.</ERROR_server>
+<ERROR_server_timeout>Sorry, connection to server
+timed out.</ERROR_server_timeout>
+<ERROR_problem_asset>Sorry, we had a problem recovering 
+the current photo.</ERROR_problem_asset>
+<ERROR_server_no_internet>Sorry, no internet
+connectivity available.</ERROR_server_no_internet>
+<ERROR_wrong_login>Sorry, your login information
+is not valid. </ERROR_wrong_login>
+<ERROR_empty_email>The email field cannot be empty.</ERROR_empty_email>
+<ERROR_invalid_email>The email does not 
+have the correct format.</ERROR_invalid_email>
+<ERROR_empty_password>The password field cannot be empty.</ERROR_empty_password>
+<ERROR_wrong_email>Sorry, this email address does not exist in our database.</ERROR_wrong_email>
+
+<ERROR_signup_empty_username>The username field cannot be empty</ERROR_signup_empty_username>
+<ERROR_signup_empty_email>The email field cannot be empty</ERROR_signup_empty_email>
+<ERROR_signup_invalid_email>The email does not 
+have the correct format.</ERROR_signup_invalid_email>
+<ERROR_signup_empty_password>The password field cannot be empty.</ERROR_signup_empty_password>
+<ERROR_signup_password_too_short>Sorry, your password is too short. 
+Try at least 6 characters.</ERROR_signup_password_too_short>
+<ERROR_signup_password_different>Sorry, your password confirmation 
+does not match.</ERROR_signup_password_different>
+<ERROR_signup>Sorry, this email already 
+exists in our database.</ERROR_signup>
+
+<ERROR_video_copyright>Sorry, this video cannot be played
+due to copyright issues.</ERROR_video_copyright>
+
+<ERROR_profile_not_available>Sorry, but this user doesn't 
+have a space. Thanks.</ERROR_profile_not_available>
+
+<ERROR_virtual_asset>Sorry, this content is only available 
+on a web browser.</ERROR_virtual_asset>
+
+</content>

@@ -62,11 +62,10 @@ namespace Gvr.Internal {
     }
 
     public virtual RenderTexture CreateStereoScreen() {
+			// ***IHMTEKs modification
+			GvrViewer.Instance.StereoScreenScale = 1.0F;
+			//****
       float scale = GvrViewer.Instance.StereoScreenScale;
-#if UNITY_5_6_OR_NEWER
-      // Unity  halved the render texture size on 5.6, so we compensate here.
-      scale *= 2.0f;
-#endif  // UNITY_5_6_OR_NEWER
       int width = Mathf.RoundToInt(Screen.width * scale);
       int height = Mathf.RoundToInt(Screen.height * scale);
       if (this.RequiresNativeDistortionCorrection()) {
@@ -77,8 +76,7 @@ namespace Gvr.Internal {
       //    + width+ "x" + height + ".");
       var rt = new RenderTexture(width, height, 24, RenderTextureFormat.Default);
       rt.anisoLevel = 0;
-      //rt.antiAliasing = Mathf.Max(QualitySettings.antiAliasing, 1);
-			rt.antiAliasing = 1;	
+      rt.antiAliasing = Mathf.Max(QualitySettings.antiAliasing, 1);
       return rt;
     }
 
@@ -172,6 +170,10 @@ namespace Gvr.Internal {
       // Do nothing.
     }
 
+    public virtual void OnLevelLoaded(int level) {
+      // Do nothing.
+    }
+
     public virtual void OnApplicationQuit() {
       // Do nothing.
     }
@@ -235,16 +237,12 @@ namespace Gvr.Internal {
 #if UNITY_EDITOR
         device = new EditorDevice();
 #elif ANDROID_DEVICE
-    #if UNITY_HAS_GOOGLEVR
-        device = new UnityVRDevice();
-    #else
         device = new AndroidDevice();
-    #endif  // UNITY_HAS_GOOGLEVR
 #elif IPHONE_DEVICE
         device = new iOSDevice();
 #else
         throw new InvalidOperationException("Unsupported device.");
-#endif  // UNITY_EDITOR
+#endif
       }
       return device;
     }

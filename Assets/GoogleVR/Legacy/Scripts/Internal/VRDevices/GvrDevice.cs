@@ -87,11 +87,7 @@ namespace Gvr.Internal {
 
     public override void PostRender(RenderTexture stereoScreen) {
       SetTextureId((int)stereoScreen.GetNativeTexturePtr());
-
-      // Disable obsolete warnings - we don't need to pass in a callback here.
-#pragma warning disable 618
       GL.IssuePluginEvent(kRenderEvent);
-#pragma warning restore 618
     }
 
     public override void OnPause(bool pause) {
@@ -184,11 +180,9 @@ namespace Gvr.Internal {
 
 #if UNITY_IOS
     private const string dllName = "__Internal";
-#elif UNITY_HAS_GOOGLEVR
-    private const string dllName = "gvr";
 #else
     private const string dllName = "gvrunity";
-#endif  // UNITY_IOS
+#endif
 
     [DllImport(dllName)]
     private static extern void Start();

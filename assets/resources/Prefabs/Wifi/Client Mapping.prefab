@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 423296}
+  - component: {fileID: 11401556}
+  - component: {fileID: 11424834}
+  - component: {fileID: 11431342}
+  - component: {fileID: 114022281108561724}
+  - component: {fileID: 114751623612834184}
+  - component: {fileID: 11465274}
+  - component: {fileID: 114451731792903336}
+  m_Layer: 0
+  m_Name: Client Mapping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423296
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11401556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fddc132465e2d64419b38820428373f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rClientNumberBackchannel: {fileID: 11465274}
+  m_rAngleXController: {fileID: 11424834}
+  m_rAngleYController: {fileID: 11431342}
+  m_rAngleZController: {fileID: 114022281108561724}
+  m_rStringData: {fileID: 114751623612834184}
+--- !u!114 &11424834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62eaf1b97e1a3f40aecc4b0cd350d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: XAngle
+  player: 999
+  m_fOnFloatChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EasyWiFi.ServerControls.OnFloatChanged, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &11431342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62eaf1b97e1a3f40aecc4b0cd350d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: YAngle
+  player: 999
+  m_fOnFloatChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EasyWiFi.ServerControls.OnFloatChanged, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &11465274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace0bc22ac4d5464393c5303796525f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: ClientNumber
+  player: 999
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 163274}
+  m_IsPrefabParent: 1
+--- !u!114 &114022281108561724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62eaf1b97e1a3f40aecc4b0cd350d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: ZAngle
+  player: 999
+  m_fOnFloatChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EasyWiFi.ServerControls.OnFloatChanged, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114451731792903336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d89db201193374bbf289f058e87a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114751623612834184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f8983642bb1474398547180940a989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: MetaData
+  player: 999
+  m_strOnStringChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EasyWiFi.ServerControls.CustomStringDataServerController+OnStringChanged,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  callType: 0
